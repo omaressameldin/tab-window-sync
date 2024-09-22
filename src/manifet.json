@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3
+, "name": "Tab Window Sync"
+, "description": "When this extension is enabled, tabs are synced between windows"
+, "author": "BlackGlory"
+, "version": "2.0.5"
+, "icons": {
+    "16": "assets/images/icon-16.png"
+  , "32": "assets/images/icon-32.png"
+  , "48": "assets/images/icon-48.png"
+  , "64": "assets/images/icon-64.png"
+  , "128": "assets/images/icon-128.png"
+  }
+, "background": {
+    "service_worker": "background.js"
+  }
+, "permissions": []
+}
