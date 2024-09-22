@@ -47,7 +47,7 @@ async function moveTabsToCurrentWindow(): Promise<void> {
 async function getAllTabs(): Promise<chrome.tabs.Tab[]> {
   return await chrome.tabs.query({
     // tabs can only be moved to and from normal
-  , windowType: 'normal'
+    windowType: 'normal'
   })
 }
 
