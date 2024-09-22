@@ -19,7 +19,7 @@ async function moveTabsToCurrentWindow(): Promise<void> {
 
   // tabs can only be moved to and from normal
   if (window.type === 'normal') {
-    const tabs = await getPinnedTabs()
+    const tabs = await getAllTabs()
 
     const tabIds = tabs
       .map(x => x.id)
@@ -44,10 +44,8 @@ async function moveTabsToCurrentWindow(): Promise<void> {
   }
 }
 
-async function getPinnedTabs(): Promise<chrome.tabs.Tab[]> {
+async function getAllTabs(): Promise<chrome.tabs.Tab[]> {
   return await chrome.tabs.query({
-    pinned: true
-
     // tabs can only be moved to and from normal
   , windowType: 'normal'
   })
