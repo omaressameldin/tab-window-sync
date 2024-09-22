@@ -1,7 +1,7 @@
 {
   "manifest_version": 3
-, "name": "Active Pinned Tabs"
-, "description": "When this extension is enabled, pinned tabs will be automatically moved to the current window."
+, "name": "Tab Window Sync"
+, "description": "When this extension is enabled, tabs are synced between windows"
 , "author": "BlackGlory"
 , "version": "2.0.5"
 , "icons": {
